@@ -1,0 +1,41 @@
+========================================
+PUSH TO GITHUB - COMMAND REFERENCE
+========================================
+
+REPOSITORY: https://github.com/anizxx/Object-Detection
+
+STEP 1: Install Git (if not installed)
+----------------------------------------
+Download from: https://git-scm.com/download/win
+Install with default settings, then restart PowerShell
+
+STEP 2: Configure Git (first time only)
+----------------------------------------
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+STEP 3: Push to GitHub
+----------------------------------------
+Run these commands in PowerShell (in this directory):
+
+git init
+git add .
+git commit -m "Initial commit: Object Detection ML Project"
+git remote add origin https://github.com/anizxx/Object-Detection.git
+git branch -M main
+git push -u origin main
+
+NOTE: When pushing, you'll need to authenticate:
+- Use a Personal Access Token (not password)
+- Create token at: https://github.com/settings/tokens
+- Select "repo" scope
+
+ALTERNATIVE: Use the helper script
+----------------------------------------
+After installing Git, simply run:
+.\push.ps1
+
+This will do everything automatically!
+
+========================================
+
